@@ -11,14 +11,15 @@
  */
 public class Picture
 {
-    private Triangle petal1;
-    private Triangle petal2;
-    private Triangle petal3;
-    private Triangle petal4;
-    private Triangle petal5;
-    private Triangle petal6;
-    private Triangle leaf;
-    private Circle circle;
+    private Triangle nacho1;
+    private Triangle nacho2;
+    private Triangle nacho3;
+    private Triangle nacho4;
+    private Triangle nacho5;
+    private Triangle nacho6;
+    private Circle salsa;
+    private Circle salsaBowl;
+    private Circle bowl;
     private boolean drawn;
 
     /**
@@ -26,14 +27,15 @@ public class Picture
      */
     public Picture()
     {
-        petal1 = new Triangle();  
-        petal2 = new Triangle(); 
-        petal3 = new Triangle(); 
-        petal4 = new Triangle(); 
-        petal5 = new Triangle(); 
-        petal6 = new Triangle(); 
-        leaf = new Triangle(); 
-        circle = new Circle();
+        nacho1 = new Triangle();  
+        nacho2 = new Triangle(); 
+        nacho3 = new Triangle(); 
+        nacho4 = new Triangle(); 
+        nacho5 = new Triangle(); 
+        nacho6 = new Triangle(); 
+        salsa = new Circle(); 
+        salsaBowl = new Circle();
+        bowl = new Circle();
         drawn = false;
     }
 
@@ -43,53 +45,61 @@ public class Picture
     public void draw()
     {
         if(!drawn) { 
-            leaf.changeColor("green");
-            leaf.changeSize(60, 180);
-            leaf.moveHorizontal(20);
-            leaf.moveVertical(-60);
-            leaf.makeVisible();
+            salsaBowl.changeColor("black");
+            salsaBowl.changeSize(50);
+            salsaBowl.moveHorizontal(60);
+            salsaBowl.moveVertical(-100);
+            salsaBowl.makeVisible();
             
-            petal1.changeColor("red");
-            petal1.changeSize(60, 180);
-            petal1.moveHorizontal(20);
-            petal1.moveVertical(-60);
-            petal1.makeVisible();
+            salsa.changeColor("red");
+            salsa.changeSize(45);
+            salsa.moveHorizontal(60);
+            salsa.moveVertical(-100);
+            salsa.makeVisible();
             
-            petal2.changeColor("magenta");
-            petal2.changeSize(60, 180);
-            petal2.moveHorizontal(20);
-            petal2.moveVertical(-60);
-            petal2.makeVisible();
+            bowl.changeColor("black");
+            bowl.changeSize(100);
+            bowl.moveHorizontal(-10);
+            bowl.moveVertical(40);
+            bowl.changeSize(50);
+            bowl.makeVisible();
             
-            petal3.changeColor("red");
-            petal3.changeSize(60, 180);
-            petal3.moveHorizontal(20);
-            petal3.moveVertical(-60);
-            petal3.makeVisible();
+            nacho1.changeColor("yellow");
+            nacho1.changeSize(50, 50);
+            nacho1.moveHorizontal(40);
+            nacho1.moveVertical(40);
+            nacho1.makeVisible();
             
-            petal4.changeColor("magenta");
-            petal4.changeSize(60, 180);
-            petal4.moveHorizontal(20);
-            petal4.moveVertical(-60);
-            petal4.makeVisible();
+            nacho2.changeColor("yellow");
+            nacho2.changeSize(50, 50);
+            nacho2.moveHorizontal(20);
+            nacho2.moveVertical(-60);
+            nacho2.makeVisible();
             
-            petal5.changeColor("red");
-            petal5.changeSize(60, 180);
-            petal5.moveHorizontal(20);
-            petal5.moveVertical(-60);
-            petal5.makeVisible();
+            nacho3.changeColor("yellow");
+            nacho3.changeSize(50, 50);
+            nacho3.moveHorizontal(20);
+            nacho3.moveVertical(-60);
+            nacho3.makeVisible();
             
-            petal6.changeColor("magenta");
-            petal6.changeSize(60, 180);
-            petal6.moveHorizontal(20);
-            petal6.moveVertical(-60);
-            petal6.makeVisible();
+            nacho4.changeColor("yellow");
+            nacho4.changeSize(50, 50);
+            nacho4.moveHorizontal(20);
+            nacho4.moveVertical(-60);
+            nacho4.makeVisible();
+        
+            nacho5.changeColor("yellow");
+            nacho5.changeSize(50, 50);
+            nacho5.moveHorizontal(20);
+            nacho5.moveVertical(-60);
+            nacho5.makeVisible();
+            
+            nacho6.changeColor("yellow");
+            nacho6.changeSize(50, 50);
+            nacho6.moveHorizontal(20);
+            nacho6.moveVertical(-60);
+            nacho6.makeVisible();
            
-            circle.changeColor("yellow");
-            circle.moveHorizontal(100);
-            circle.moveVertical(-40);
-            circle.changeSize(80);
-            circle.makeVisible();
             drawn = true;
         }
     }
@@ -99,14 +109,15 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        petal1.changeColor("black");
-        petal2.changeColor("grey");
-        petal3.changeColor("black");
-        petal4.changeColor("grey");
-        petal5.changeColor("black");
-        petal6.changeColor("grey");
-        leaf.changeColor("grey");
-        circle.changeColor("black");
+        nacho1.changeColor("white");
+        nacho2.changeColor("white");
+        nacho3.changeColor("white");
+        nacho4.changeColor("white");
+        nacho5.changeColor("white");
+        nacho6.changeColor("white");
+        salsa.changeColor("grey");
+        salsaBowl.changeColor("black");
+        bowl.changeColor("black");
     }
 
     /**
@@ -114,13 +125,14 @@ public class Picture
      */
     public void setColor()
     {
-        petal1.changeColor("red");
-        petal2.changeColor("magenta");
-        petal3.changeColor("red");
-        petal4.changeColor("magenta");
-        petal5.changeColor("red");
-        petal6.changeColor("magenta");
-        leaf.changeColor("green");
-        circle.changeColor("yellow");
+        nacho1.changeColor("yellow");
+        nacho2.changeColor("yellow");
+        nacho3.changeColor("yellow");
+        nacho4.changeColor("yellow");
+        nacho5.changeColor("yellow");
+        nacho6.changeColor("yellow");
+        salsaBowl.changeColor("black");
+        salsa.changeColor("red");
+        bowl.changeColor("black");
     }
 }
