@@ -48,15 +48,15 @@ public class Picture
     {
         if(!drawn) { 
             salsaBowl.changeColor("black");
-            salsaBowl.changeSize(50);
-            salsaBowl.moveHorizontal(60);
-            salsaBowl.moveVertical(-100);
+            salsaBowl.changeSize(70);
+            salsaBowl.moveHorizontal(-80);
+            salsaBowl.moveVertical(80);
             salsaBowl.makeVisible();
             
             salsa.changeColor("red");
-            salsa.changeSize(45);
-            salsa.moveHorizontal(60);
-            salsa.moveVertical(-100);
+            salsa.changeSize(50);
+            salsa.moveHorizontal(-70);
+            salsa.moveVertical(90);
             salsa.makeVisible();
             
             bowl.changeColor("black");
@@ -116,6 +116,8 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
+        salsaBowl.changeColor("black");
+        bowl.changeColor("black");
         nacho1.changeColor("white");
         nacho2.changeColor("white");
         nacho3.changeColor("white");
@@ -123,9 +125,7 @@ public class Picture
         nacho5.changeColor("white");
         nacho6.changeColor("white");
         nacho7.changeColor("white");
-        salsa.changeColor("grey");
-        salsaBowl.changeColor("black");
-        bowl.changeColor("black");
+        salsa.changeColor("white");
     }
 
     /**
