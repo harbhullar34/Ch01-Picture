@@ -13,6 +13,10 @@ public class Picture
 {
     private Triangle petal1;
     private Triangle petal2;
+    private Triangle petal3;
+    private Triangle petal4;
+    private Triangle petal5;
+    private Triangle petal6;
     private Triangle leaf;
     private Circle circle;
     private boolean drawn;
@@ -24,6 +28,10 @@ public class Picture
     {
         petal1 = new Triangle();  
         petal2 = new Triangle(); 
+        petal3 = new Triangle(); 
+        petal4 = new Triangle(); 
+        petal5 = new Triangle(); 
+        petal6 = new Triangle(); 
         leaf = new Triangle(); 
         circle = new Circle();
         drawn = false;
@@ -53,6 +61,29 @@ public class Picture
             petal2.moveVertical(-60);
             petal2.makeVisible();
             
+            petal3.changeColor("red");
+            petal3.changeSize(60, 180);
+            petal3.moveHorizontal(20);
+            petal3.moveVertical(-60);
+            petal3.makeVisible();
+            
+            petal4.changeColor("magenta");
+            petal4.changeSize(60, 180);
+            petal4.moveHorizontal(20);
+            petal4.moveVertical(-60);
+            petal4.makeVisible();
+            
+            petal5.changeColor("red");
+            petal5.changeSize(60, 180);
+            petal5.moveHorizontal(20);
+            petal5.moveVertical(-60);
+            petal5.makeVisible();
+            
+            petal6.changeColor("magenta");
+            petal6.changeSize(60, 180);
+            petal6.moveHorizontal(20);
+            petal6.moveVertical(-60);
+            petal6.makeVisible();
            
             circle.changeColor("yellow");
             circle.moveHorizontal(100);
@@ -70,8 +101,12 @@ public class Picture
     {
         petal1.changeColor("black");
         petal2.changeColor("grey");
-        leaf.changeColor("black");
-        circle.changeColor("grey");
+        petal3.changeColor("black");
+        petal4.changeColor("grey");
+        petal5.changeColor("black");
+        petal6.changeColor("grey");
+        leaf.changeColor("grey");
+        circle.changeColor("black");
     }
 
     /**
@@ -81,6 +116,10 @@ public class Picture
     {
         petal1.changeColor("red");
         petal2.changeColor("magenta");
+        petal3.changeColor("red");
+        petal4.changeColor("magenta");
+        petal5.changeColor("red");
+        petal6.changeColor("magenta");
         leaf.changeColor("green");
         circle.changeColor("yellow");
     }
